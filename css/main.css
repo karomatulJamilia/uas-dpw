@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f6f3e9;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#2d6a4f;
+}
+
+.navbar ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+    font-weight:500;
+}
+
+.navbar a:hover{
+    color:#ff7b00;
+}
+
+/* HERO */
+
+.hero{
+    height:85vh;
+
+    background:url("../images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 8%;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    max-width:650px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+
+    background:#ff7b00;
+
+    color:white;
+    text-decoration:none;
+
+    padding:15px 25px;
+
+    border-radius:30px;
+}
+
+.btn:hover{
+    background:#e56f00;
+}
+
+/* INFO CARD */
+
+.info-section{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    margin-top:-60px;
+
+    position:relative;
+    z-index:2;
+}
+
+.info-card{
+    width:350px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    /* box-shadow:0 5px 20px rgba(0,0,0,.1); */
+}
+
+.info-card h3{
+    color:#2d6a4f;
+    margin-bottom:10px;
+}
+
+/* ABOUT */
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    color:#2d6a4f;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* FOOTER */
+
+footer{
+    background:#2d6a4f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .info-section{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .info-card{
+        width:90%;
+    }
+
+}
